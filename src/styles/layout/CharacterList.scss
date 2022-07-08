@@ -1,0 +1,10 @@
+@import '../core/Variables.scss';
+
+.CharacterList{
+    list-style-type: none;
+    
+}
+
+.characterList__item:nth-child(even){
+    background-color: $isabelle;
+  }

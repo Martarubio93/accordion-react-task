@@ -1,0 +1,16 @@
+@import "../core/Variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  &__title {
+    text-transform: uppercase;
+    margin-left: 10%;
+    font-family: $mainFont;
+    color: $alumn;
+    font-size: 18px;
+    padding-top: 12px;
+  }
+}

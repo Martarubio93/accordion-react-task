@@ -1,0 +1,17 @@
+@import "../core/Variables.scss";
+
+.character {
+  border: solid 2px $isabelle;
+  &.isOpen {
+    .character__body {
+      display: block;
+      background-color: $isabelle;
+    }
+  }
+  &.isClose {
+    .character__body {
+      display: none;
+    }
+  }
+}
+

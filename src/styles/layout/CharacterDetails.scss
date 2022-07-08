@@ -1,0 +1,46 @@
+@import "../core/Variables.scss";
+
+.characterdetails {
+  background-color: $callSignColor;
+  display: flex;
+  height: 70px;
+  @media (min-width: 768px) {
+    height: 150px;
+  }
+  &__img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    transform: translateY(18%);
+    margin-left: 14px;
+    @media (min-width: 768px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  &__mainInfo {
+    list-style-type: none;
+    font-family: $mainFont;
+    transform: translateY(20%) ;
+    margin: 22px;
+
+    &--title {
+      color: $snow;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 550;
+      @media (min-width: 768px) {
+        font-size: 26px;
+      }
+    }
+    &--status {
+      font-size: 10px;
+      color: $snow;
+      text-transform: uppercase;
+      font-weight: 350;
+      @media (min-width: 768px) {
+        font-size: 22px;
+      }
+    }
+  }
+}

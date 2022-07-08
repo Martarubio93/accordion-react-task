@@ -1,0 +1,40 @@
+@import "../core/Variables.scss";
+
+.mainHeaderList{
+  list-style: none;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 8px;
+ &__checkBox{
+   display: none;
+   @media (min-width:768px){
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+   }
+   
+ }
+ &__item{
+  flex-basis: 33.33%;
+  font-family: $mainFont;
+  font-size: 14px;
+  color: $night;
+  font-weight: bold;
+  @media(min-width: 768px){
+    font-size: 18px;
+    &.species{
+      max-width: 170px;
+    }
+  }
+  @media (min-width: 1024px){
+    font-size: 25px;
+  }
+ }
+}

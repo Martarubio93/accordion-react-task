@@ -1,0 +1,15 @@
+@import "../core/Variables.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  &__small {
+    margin-left: 10%;
+    font-family: $mainFont;
+    color: $body;
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+}
